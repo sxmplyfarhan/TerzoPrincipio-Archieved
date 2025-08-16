@@ -1,0 +1,129 @@
+<html lang="it">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+    il terzo principio
+   </title>
+   <link href="noname-cutout.png" rel="icon"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Oswald', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-200 min-h-screen flex flex-col justify-center items-center overflow-y-auto md:overflow-hidden">
+  <section class="flex-grow flex items-center justify-center bg-gray-800 w-full">
+   <div class="container mx-auto px-4 py-8 flex justify-center">
+    <div class="bg-gray-900 text-white p-8 rounded-lg shadow-lg flex flex-col items-center mb-6 relative w-full max-w-5xl h-full">
+     <div class="absolute top-4 right-4">
+      <div class="relative">
+       <button class="cursor-pointer" id="translateButton">
+        <img alt="Translate icon" src="../pictures/tra21.png"/>
+       </button>
+       <div class="absolute right-0 mt-2 w-48 bg-gray-900 text-white rounded-md shadow-lg hidden" id="languageMenu">
+        <ul>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="it">
+          Italiano
+         </li>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="es">
+          Español
+         </li>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="fr">
+          Français
+         </li>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="en">
+          English
+         </li>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="vi">
+          Tiếng Việt
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <div class="w-full">
+      <h2 class="text-teal-500 text-2xl font-semibold mb-4 text-center" id="title">
+        La Terza Legge della Dinamica: Azione e Reazione
+      </h2>
+      <h3 class="text-3xl font-bold mb-6 text-center" id="subtitle">
+        Come le forze tra corpi interagiscono e influenzano il movimento in base alla massa e accelerazione.
+      </h3>
+      <p class="text-gray-400 mb-6 text-center text-lg" id="content">
+        Il terzo principio della dinamica, o principio di azione e reazione, afferma che ogni forza che A esercita su B ha una forza uguale e contraria che B esercita su A. <br>La formula è:<br>
+
+        FAB = – FAB<br>
+        
+        Le forze, uguali e contrarie, agiscono su corpi diversi. I corpi reagiscono in modo diverso perché la forza dipende dalla massa: corpi con masse diverse avranno accelerazioni diverse, anche se la forza è la stessa.
+     
+    </p>
+    <div class="flex justify-center mt-6">
+             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <img class="rounded-lg shadow-lg w-full max-w-xs" src="../pictures/fp1das.jpg" alt="Description of image 1"/>
+                 <img class="rounded-lg shadow-lg w-full max-w-xs" src="../pictures/toeri2.png" alt="Description of image 2"/>
+              </div>
+        </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <footer class="bg-gray-800 py-4 w-full">
+   <div class="container mx-auto flex justify-center px-4">
+        <a class="bg-teal-500 text-gray-900 px-6 py-3 mx-2 rounded-lg hover:bg-teal-600 flex items-center" href="index.html">
+    <img alt="Left arrow icon" class="mr-2" src="../pictures/arrow2.png"/>
+    Indietro
+    </a>
+    <a class="bg-teal-500 text-gray-900 px-6 py-3 mx-2 rounded-lg hover:bg-teal-600 flex items-center" href="esperimento-uno.html">
+    Avanti
+     <img alt="Right arrow icon" class="ml-2" src="../pictures/arrow1.png"/>
+    </a>
+   </div>
+  </footer>
+  <script>
+   document.getElementById('translateButton').addEventListener('click', function() {
+            document.getElementById('languageMenu').classList.toggle('hidden');
+        });
+        
+
+        const translations = { 
+            it: {
+                title: "La Terza Legge della Dinamica: Azione e Reazione",
+                subtitle: "Come le forze tra corpi interagiscono e influenzano il movimento in base alla massa e accelerazione.",
+                content: "        Il terzo principio della dinamica, o principio di azione e reazione, afferma che ogni forza che A esercita su B ha una forza uguale e contraria che B esercita su A. \n La formula è:\n FAB = – FAB \n Le forze, uguali e contrarie, agiscono su corpi diversi. I corpi reagiscono in modo diverso perché la forza dipende dalla massa: corpi con masse diverse avranno accelerazioni diverse, anche se la forza è la stessa."
+            },
+            es: {
+                title: "La Tercera Ley de la Dinámica: Acción y Reacción",
+                subtitle: "Cómo las fuerzas entre los cuerpos interactúan e influyen en el movimiento según la masa y la aceleración.",
+                content: "El tercer principio de la dinámica, o principio de acción y reacción, afirma que cada fuerza que A ejerce sobre B tiene una fuerza igual y contraria que B ejerce sobre A. \n La fórmula es: \nFAB = -FAB \n Las fuerzas, iguales y contrarias, actúan sobre cuerpos diferentes. Los cuerpos reaccionan de manera diferente porque la fuerza depende de la masa: cuerpos con masas diferentes tendrán aceleraciones diferentes, aunque la fuerza sea la misma."
+            },
+            fr: {
+                title: "La Troisième Loi de la Dynamique : Action et Réaction",
+                subtitle: "Comment les forces entre les corps interagissent et influencent le mouvement en fonction de la masse et de l'accélération.",
+                content: "Le troisième principe de la dynamique, ou principe d'action et de réaction, affirme que chaque force que A exerce sur B a une force égale et opposée que B exerce sur A. \n  La formule est : \n  FAB = -FAB \n  Les forces, égales et opposées, agissent sur des corps différents. Les corps réagissent différemment car la force dépend de la masse : les corps ayant des masses différentes auront des accélérations différentes, même si la force est la même."
+            },
+            en: {
+                title: "The Third Law of Dynamics: Action and Reaction",
+                subtitle: "How the forces between bodies interact and influence motion based on mass and acceleration.",
+                content: "The third principle of dynamics, or the principle of action and reaction, states that every force that A exerts on B has an equal and opposite force that B exerts on A.  \n The formula is:  \n FAB = -FAB  \n The forces, equal and opposite, act on different bodies. The bodies react differently because force depends on mass: bodies with different masses will have different accelerations, even though the force is the same."            },
+            vi: {
+                title: "Định lý thứ ba của Động lực học: Hành động và Phản ứng",
+                subtitle: "Cách các lực giữa các vật thể tương tác và ảnh hưởng đến chuyển động dựa trên khối lượng và gia tốc.",
+                content: "Nguyên lý thứ ba của động lực học, hay nguyên lý hành động và phản ứng, phát biểu rằng mỗi lực mà A tác dụng lên B có một lực bằng và ngược lại mà B tác dụng lên A. \n Công thức là: \n FAB = -FAB \n Các lực, bằng và ngược lại, tác dụng lên các vật thể khác nhau. Các vật thể phản ứng khác nhau vì lực phụ thuộc vào khối lượng: các vật thể có khối lượng khác nhau sẽ có gia tốc khác nhau, mặc dù lực là như nhau."            }
+        };
+
+        document.querySelectorAll('#languageMenu li').forEach(function(item) {
+            item.addEventListener('click', function() {
+                const lang = this.getAttribute('data-lang');
+                document.getElementById('title').innerText = translations[lang].title;
+                document.getElementById('subtitle').innerText = translations[lang].subtitle;
+                document.getElementById('content').innerText = translations[lang].content;
+                document.getElementById('languageMenu').classList.add('hidden');
+            });
+        });
+  </script>
+ </body>
+</html>

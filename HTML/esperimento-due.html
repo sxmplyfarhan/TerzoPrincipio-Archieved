@@ -1,0 +1,123 @@
+<html lang="it">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+    il terzo principio
+   </title>
+   <link href="noname-cutout.png" rel="icon"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Oswald', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-200 min-h-screen flex flex-col justify-center items-center overflow-y-auto md:overflow-hidden">
+  <section class="flex-grow flex items-center justify-center bg-gray-800 w-full">
+   <div class="container mx-auto px-4 py-8 flex justify-center">
+    <div class="bg-gray-900 text-white p-8 rounded-lg shadow-lg flex flex-col items-center mb-6 relative w-full max-w-5xl h-full">
+     <div class="absolute top-4 right-4">
+      <div class="relative">
+       <button class="cursor-pointer" id="translateButton">
+        <img alt="Translate icon" src="../pictures/tra21.png"/>
+       </button>
+       <div class="absolute right-0 mt-2 w-48 bg-gray-900 text-white rounded-md shadow-lg hidden" id="languageMenu">
+        <ul>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="it">
+          Italiano
+         </li>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="es">
+          Español
+         </li>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="fr">
+          Français
+         </li>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="en">
+          English
+         </li>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="vi">
+          Tiếng Việt
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <div class="w-full">
+      <h2 class="text-teal-500 text-2xl font-semibold mb-4 text-center" id="title">
+        La Conquista dello Spazio
+      </h2>
+      <h3 class="text-3xl font-bold mb-6 text-center" id="subtitle">
+        Il Razzo e il Principio di Azione e Reazione
+      </h3>
+      <p class="text-gray-400 mb-6 text-center text-lg" id="content">
+        Il terzo principio della dinamica ha permesso la conquista dello spazio, grazie al motore a razzo. Questo motore sfrutta la reazione dei gas espulsi per generare spinta. Il razzo immagazzina combustibile e comburente per una combustione interna, che fa uscire gas ad alta velocità verso il basso, creando una spinta verso l'alto. La forza di propulsione diretta verso il basso permette al razzo di vincere la forza di gravità e decollare.
+      </p>
+      <div class="flex justify-center mt-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+           <img class="rounded-lg shadow-lg w-full max-w-xs" src="../pictures/razzo1.jpg" alt="Description of image 1"/>
+            <img class="rounded-lg shadow-lg w-full max-w-xs" src="../pictures/razzo2.jpg" alt="Description of image 2"/>
+         </div>
+   </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <footer class="bg-gray-800 py-4 w-full">
+   <div class="container mx-auto flex justify-center px-4">
+        <a class="bg-teal-500 text-gray-900 px-6 py-3 mx-2 rounded-lg hover:bg-teal-600 flex items-center" href="toeria-due.html">
+    <img alt="Left arrow icon" class="mr-2" src="../pictures/arrow2.png"/>
+    Indietro
+    </a>
+    <a class="bg-teal-500 text-gray-900 px-6 py-3 mx-2 rounded-lg hover:bg-teal-600 flex items-center" href="toeria-tre.html">
+    Avanti
+     <img alt="Right arrow icon" class="ml-2" src="../pictures/arrow1.png"/>
+    </a>
+   </div>
+  </footer>
+  <script>
+   document.getElementById('translateButton').addEventListener('click', function() {
+            document.getElementById('languageMenu').classList.toggle('hidden');
+        });
+
+        const translations = {
+            it: {
+                title: "La Conquista dello Spazio",
+                subtitle: "Il Razzo e il Principio di Azione e Reazione",
+                content: "Il terzo principio della dinamica ha permesso la conquista dello spazio, grazie al motore a razzo. Questo motore sfrutta la reazione dei gas espulsi per generare spinta. Il razzo immagazzina combustibile e comburente per una combustione interna, che fa uscire gas ad alta velocità verso il basso, creando una spinta verso l'alto. La forza di propulsione diretta verso il basso permette al razzo di vincere la forza di gravità e decollare."
+            },
+            es: {
+                title: "La Conquista del Espacio",
+                subtitle: "El Cohete y el Principio de Acción y Reacción",
+                content: "El tercer principio de la dinámica ha permitido la conquista del espacio, gracias al motor a cohete. Este motor aprovecha la reacción de los gases expulsados para generar empuje. El cohete almacena combustible y comburente para una combustión interna, que expulsa gases a alta velocidad hacia abajo, creando un empuje hacia arriba. La fuerza de propulsión dirigida hacia abajo permite que el cohete venza la fuerza de gravedad y despegue. "
+            },
+            fr: {
+                title: "La Conquête de l'Espace",
+                subtitle: "La Fusée et le Principe d'Action et de Réaction",
+                content: "Le troisième principe de la dynamique a permis la conquête de l'espace, grâce au moteur à fusée. Ce moteur exploite la réaction des gaz expulsés pour générer une poussée. La fusée stocke du carburant et de l'oxydant pour une combustion interne, qui expulse les gaz à grande vitesse vers le bas, créant une poussée vers le haut. La force de propulsion dirigée vers le bas permet à la fusée de vaincre la force de gravité et de décoller."
+            },
+            en: {
+                title: "The Conquest of Space",
+                subtitle: "The Rocket and the Principle of Action and Reaction",
+                content: "The third principle of dynamics has enabled the conquest of space, thanks to the rocket engine. This engine uses the reaction of the expelled gases to generate thrust. The rocket stores fuel and oxidizer for internal combustion, which expels gases at high speed downward, creating an upward thrust. The propulsion force directed downward allows the rocket to overcome gravity and take off."            },
+            vi: {
+                title: "Cuộc Chinh Phục Vũ Trụ",
+                subtitle: "Tên Lửa và Nguyên lý Hành động và Phản ứng",
+                content: "Nguyên lý thứ ba của động lực học đã cho phép cuộc chinh phục vũ trụ, nhờ vào động cơ tên lửa. Động cơ này tận dụng phản ứng của các khí thải để tạo ra lực đẩy. Tên lửa lưu trữ nhiên liệu và chất ôxy hóa cho một quá trình đốt cháy bên trong, làm các khí thoát ra với tốc độ cao về phía dưới, tạo ra một lực đẩy lên phía trên. Lực đẩy hướng xuống dưới giúp tên lửa vượt qua lực hấp dẫn và cất cánh."            },
+        };
+
+        document.querySelectorAll('#languageMenu li').forEach(function(item) {
+            item.addEventListener('click', function() {
+                const lang = this.getAttribute('data-lang');
+                document.getElementById('title').innerText = translations[lang].title;
+                document.getElementById('subtitle').innerText = translations[lang].subtitle;
+                document.getElementById('content').innerText = translations[lang].content;
+                document.getElementById('languageMenu').classList.add('hidden');
+            });
+        });
+  </script>
+ </body>
+</html>

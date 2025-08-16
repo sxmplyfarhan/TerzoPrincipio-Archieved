@@ -1,0 +1,126 @@
+<html lang="it">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+    il terzo principio
+   </title>
+   <link href="noname-cutout.png" rel="icon"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Oswald', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-200 min-h-screen flex flex-col justify-center items-center overflow-y-auto md:overflow-hidden">
+  <section class="flex-grow flex items-center justify-center bg-gray-800 w-full">
+   <div class="container mx-auto px-4 py-8 flex justify-center">
+    <div class="bg-gray-900 text-white p-8 rounded-lg shadow-lg flex flex-col items-center mb-6 relative w-full max-w-5xl h-full">
+     <div class="absolute top-4 right-4">
+      <div class="relative">
+       <button class="cursor-pointer" id="translateButton">
+        <img alt="Translate icon" src="../pictures/tra21.png"/>
+       </button>
+       <div class="absolute right-0 mt-2 w-48 bg-gray-900 text-white rounded-md shadow-lg hidden" id="languageMenu">
+        <ul>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="it">
+          Italiano
+         </li>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="es">
+          Español
+         </li>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="fr">
+          Français
+         </li>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="en">
+          English
+         </li>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="vi">
+          Tiếng Việt
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <div class="w-full">
+      <h2 class="text-teal-500 text-2xl font-semibold mb-4 text-center" id="title">
+        La Propulsione a Reazione negli Aerei
+      </h2>
+      <h3 class="text-3xl font-bold mb-6 text-center" id="subtitle">
+        Applicazione del Terzo Principio della Dinamica
+      </h3>
+      <p class="text-gray-400 mb-6 text-center text-lg" id="content">
+        Il terzo principio della dinamica è proprio quello su cui si basa la propulsione a reazione, che permette il funzionamento degli aerei.
+La turbina agisce esercitando una forza sui gas di scarico, che vengono quindi espulsi a grande velocità.
+A loro volta i gas esercitano una forza sulla turbina (e quindi sull’aereo a cui essa è collegata).
+La seconda forza è UGUALE ed OPPOSTA alla prima; vediamo quindi applicato il terzo principio della dinamica.
+      </p>
+      <div class="flex justify-center mt-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+           <img class="rounded-lg shadow-lg w-full max-w-xs" src="../pictures/aerio.jpg" alt="Description of image 1"/>
+            <img class="rounded-lg shadow-lg w-full max-w-xs" src="../pictures/aereo2.jpg" alt="Description of image 2"/>
+         </div>
+   </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <footer class="bg-gray-800 py-4 w-full">
+   <div class="container mx-auto flex justify-center px-4">
+        <a class="bg-teal-500 text-gray-900 px-6 py-3 mx-2 rounded-lg hover:bg-teal-600 flex items-center" href="toeria-uno.html">
+    <img alt="Left arrow icon" class="mr-2" src="../pictures/arrow2.png"/>
+    Indietro
+    </a>
+    <a class="bg-teal-500 text-gray-900 px-6 py-3 mx-2 rounded-lg hover:bg-teal-600 flex items-center" href="toeria-due.html">
+    Avanti
+     <img alt="Right arrow icon" class="ml-2" src="../pictures/arrow1.png"/>
+    </a>
+   </div>
+  </footer>
+  <script>
+   document.getElementById('translateButton').addEventListener('click', function() {
+            document.getElementById('languageMenu').classList.toggle('hidden');
+        });
+
+        const translations = {
+            it: {
+                title: "La Propulsione a Reazione negli Aerei",
+                subtitle: "Applicazione del Terzo Principio della Dinamica",
+                content: "Il terzo principio della dinamica è proprio quello su cui si basa la propulsione a reazione, che permette il funzionamento degli aerei. La turbina agisce esercitando una forza sui gas di scarico, che vengono quindi espulsi a grande velocità. A loro volta i gas esercitano una forza sulla turbina (e quindi sull’aereo a cui essa è collegata). La seconda forza è UGUALE ed OPPOSTA alla prima; vediamo quindi applicato il terzo principio della dinamica."
+            },
+            es: {
+                title: "La Propulsión a Reacción en los Aviones",
+                subtitle: "Aplicación del Tercer Principio de la Dinámica",
+                content: "El tercer principio de la dinámica es precisamente sobre el que se basa la propulsión a reacción, que permite el funcionamiento de los aviones. La turbina actúa ejerciendo una fuerza sobre los gases de escape, que luego son expulsados a gran velocidad. A su vez, los gases ejercen una fuerza sobre la turbina (y por lo tanto sobre el avión al que está conectada). La segunda fuerza es IGUAL y OPUESTA a la primera; por lo tanto, vemos cómo se aplica el tercer principio de la dinámica. "
+            },
+            fr: {
+                title: "La Propulsion à Réaction dans les Avions",
+                subtitle: "Application du Troisième Principe de la Dynamique",
+                content: "Le troisième principe de la dynamique est précisément celui sur lequel repose la propulsion à réaction, qui permet le fonctionnement des avions. La turbine agit en exerçant une force sur les gaz d'échappement, qui sont ensuite expulsés à grande vitesse. À leur tour, les gaz exercent une force sur la turbine (et donc sur l'avion auquel elle est reliée). La deuxième force est EGAL et OPPOSEE à la première ; ainsi, nous voyons l'application du troisième principe de la dynamique. "
+            },
+            en: {
+                title: "Jet Propulsion in Aircraft",
+                subtitle: "Application of the Third Principle of Dynamics",
+                content: "The third principle of dynamics is precisely what jet propulsion is based on, enabling the operation of aircraft. The turbine acts by exerting a force on the exhaust gases, which are then expelled at high speed. In turn, the gases exert a force on the turbine (and thus on the aircraft to which it is connected). The second force is EQUAL and OPPOSITE to the first; therefore, we see the third principle of dynamics applied"            },
+            vi: {
+                title: "Động Cơ Phản Lực trong Máy Bay",
+                subtitle: "Ứng Dụng Nguyên lý Thứ Ba của Động lực Học",
+                content: "Nguyên lý thứ ba của động lực học chính là cơ sở cho động cơ phản lực, cho phép máy bay hoạt động. Tuabin hoạt động bằng cách tác dụng một lực lên khí thải, sau đó chúng được xả ra với tốc độ cao. Lại một lần nữa, khí thải tác dụng một lực lên tuabin (và do đó lên máy bay mà nó được kết nối). Lực thứ hai là BẰNG và NGƯỢC CHIỀU với lực đầu tiên; do đó, chúng ta thấy nguyên lý thứ ba của động lực học được áp dụng."            }
+        };
+
+        document.querySelectorAll('#languageMenu li').forEach(function(item) {
+            item.addEventListener('click', function() {
+                const lang = this.getAttribute('data-lang');
+                document.getElementById('title').innerText = translations[lang].title;
+                document.getElementById('subtitle').innerText = translations[lang].subtitle;
+                document.getElementById('content').innerText = translations[lang].content;
+                document.getElementById('languageMenu').classList.add('hidden');
+            });
+        });
+  </script>
+ </body>
+</html>

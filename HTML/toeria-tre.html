@@ -1,0 +1,128 @@
+<html lang="it">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+    il terzo principio
+   </title>
+   <link href="noname-cutout.png" rel="icon"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Oswald', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-200 min-h-screen flex flex-col justify-center items-center overflow-y-auto md:overflow-hidden">
+  <section class="flex-grow flex items-center justify-center bg-gray-800 w-full">
+   <div class="container mx-auto px-4 py-8 flex justify-center">
+    <div class="bg-gray-900 text-white p-8 rounded-lg shadow-lg flex flex-col items-center mb-6 relative w-full max-w-5xl h-full">
+     <div class="absolute top-4 right-4">
+      <div class="relative">
+       <button class="cursor-pointer" id="translateButton">
+        <img alt="Translate icon" src="../pictures/tra21.png"/>
+       </button>
+       <div class="absolute right-0 mt-2 w-48 bg-gray-900 text-white rounded-md shadow-lg hidden" id="languageMenu">
+        <ul>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="it">
+          Italiano
+         </li>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="es">
+          Español
+         </li>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="fr">
+          Français
+         </li>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="en">
+          English
+         </li>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="vi">
+          Tiếng Việt
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <div class="w-full">
+      <h2 class="text-teal-500 text-2xl font-semibold mb-4 text-center" id="title">
+        Sistemi Inerziali e Non Inerziali
+      </h2>
+      <h3 class="text-3xl font-bold mb-6 text-center" id="subtitle">
+        Principio di Azione e Reazione e la Relatività Galileiana
+      </h3>
+      <p class="text-gray-400 mb-6 text-center text-lg" id="content">
+       Il terzo principio della dinamica afferma che a ogni azione corrisponde una reazione uguale e contraria. Poiché le forze agiscono su corpi diversi, causeranno accelerazioni diverse, in base alla massa dei corpi.<br>
+
+       Quando la metropolitana frena, proviamo un'accelerazione in avanti, senza che venga applicata una forza diretta sul nostro corpo. Questo accade in un sistema di riferimento non inerziale, dove agisce una forza apparente.<br>
+       
+       I sistemi di riferimento inerziali rispettano la prima legge della dinamica, mentre quelli non inerziali no. Secondo la relatività galileiana, le leggi della meccanica sono le stesse in tutti i sistemi inerziali, a prescindere dalla velocità costante con cui si muovono.<br>
+      
+    </p>
+    <div class="flex justify-center mt-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+           <img class="rounded-lg shadow-lg w-full max-w-xs" src="../pictures/galileo.png" alt="Description of image 1"/>
+            <img class="rounded-lg shadow-lg w-full max-w-xs" src="../pictures/non1321.png"/>
+         </div>
+   </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <footer class="bg-gray-800 py-4 w-full">
+   <div class="container mx-auto flex justify-center px-4">
+        <a class="bg-teal-500 text-gray-900 px-6 py-3 mx-2 rounded-lg hover:bg-teal-600 flex items-center" href="esperimento-due.html">
+    <img alt="Left arrow icon" class="mr-2" src="../pictures/arrow2.png"/>
+    Indietro
+    </a>
+    <a class="bg-teal-500 text-gray-900 px-6 py-3 mx-2 rounded-lg hover:bg-teal-600 flex items-center" href="esperimento-tre.html">
+    Avanti
+     <img alt="Right arrow icon" class="ml-2" src="../pictures/arrow1.png"/>
+    </a>
+   </div>
+  </footer>
+  <script>
+   document.getElementById('translateButton').addEventListener('click', function() {
+            document.getElementById('languageMenu').classList.toggle('hidden');
+        });
+
+        const translations = {
+            it: {
+                title: "Sistemi Inerziali e Non Inerziali",
+                subtitle: "Principio di Azione e Reazione e la Relatività Galileiana",
+                content: "Il terzo principio della dinamica afferma che a ogni azione corrisponde una reazione uguale e contraria. Poiché le forze agiscono su corpi diversi, causeranno accelerazioni diverse, in base alla massa dei corpi. \nQuando la metropolitana frena, proviamo un'accelerazione in avanti, senza che venga applicata una forza diretta sul nostro corpo. Questo accade in un sistema di riferimento non inerziale, dove agisce una forza apparente. \n I sistemi di riferimento inerziali rispettano la prima legge della dinamica, mentre quelli non inerziali no. Secondo la relatività galileiana, le leggi della meccanica sono le stesse in tutti i sistemi inerziali, a prescindere dalla velocità costante con cui si muovono. \n"
+            },
+            es: {
+                title: "Sistemas Inerciales y No Inerciales",
+                subtitle: "Principio de Acción y Reacción y la Relatividad Galileana",
+                content: "El tercer principio de la dinámica afirma que a cada acción le corresponde una reacción igual y contraria. Dado que las fuerzas actúan sobre cuerpos diferentes, causarán aceleraciones diferentes, dependiendo de la masa de los cuerpos. \nCuando el metro frena, sentimos una aceleración hacia adelante, sin que se aplique una fuerza directa sobre nuestro cuerpo. Esto ocurre en un sistema de referencia no inercial, donde actúa una fuerza aparente. \nLos sistemas de referencia inerciales cumplen la primera ley de la dinámica, mientras que los no inerciales no. Según la relatividad galileana, las leyes de la mecánica son las mismas en todos los sistemas inerciales, independientemente de la velocidad constante con la que se muevan. \n"
+            },
+            fr: {
+                title: "Systèmes Inertiels et Non Inertiels",
+                subtitle: "Principe d'Action et de Réaction et la Relativité Galiléenne",
+                content: "Le troisième principe de la dynamique affirme qu'à chaque action correspond une réaction égale et opposée. Étant donné que les forces agissent sur des corps différents, elles provoqueront des accélérations différentes en fonction de la masse des corps. \n Lorsque le métro freine, nous ressentons une accélération en avant, sans qu'une force directe soit appliquée sur notre corps. Cela se produit dans un système de référence non inertiel, où une force apparente agit. \nLes systèmes de référence inertiels respectent la première loi de la dynamique, tandis que les systèmes non inertiels ne le font pas. Selon la relativité galiléenne, les lois de la mécanique sont les mêmes dans tous les systèmes inertiels, indépendamment de la vitesse constante à laquelle ils se déplacent. \n"
+            },
+            en: {
+                title: "Inertial and Non-Inertial Systems",
+                subtitle: "Principle of Action and Reaction and Galilean Relativity",
+                content: "The third principle of dynamics states that for every action, there is an equal and opposite reaction. Since forces act on different bodies, they will cause different accelerations depending on the mass of the bodies. \n When the subway brakes, we experience an acceleration forward, without any direct force being applied to our body. This occurs in a non-inertial reference frame, where an apparent force acts. \n Inertial reference frames obey the first law of dynamics, while non-inertial ones do not. According to Galilean relativity, the laws of mechanics are the same in all inertial reference frames, regardless of the constant velocity at which they move. \n"            },
+            vi: {
+                title: "Hệ Tham Chiếu Inertial và Không Inertial",
+                subtitle: "Nguyên lý Hành động và Phản ứng và Tương đối học Galilei",
+                content: " Nguyên lý thứ ba của động lực học phát biểu rằng mỗi hành động đều có một phản ứng bằng và ngược lại. Vì các lực tác động lên các vật thể khác nhau, chúng sẽ gây ra các gia tốc khác nhau, phụ thuộc vào khối lượng của các vật thể. \nKhi tàu điện ngầm phanh, chúng ta cảm thấy một gia tốc về phía trước, mà không có lực trực tiếp nào tác dụng lên cơ thể chúng ta. Điều này xảy ra trong một hệ tham chiếu không inertial, nơi một lực ảo tác dụng. \nCác hệ tham chiếu inertial tuân theo định lý đầu tiên của động lực học, trong khi các hệ không inertial thì không. Theo lý thuyết tương đối của Galilei, các định lý cơ học là giống nhau trong tất cả các hệ tham chiếu inertial, bất kể tốc độ di chuyển không đổi của chúng. \n"            }
+        };
+
+        document.querySelectorAll('#languageMenu li').forEach(function(item) {
+            item.addEventListener('click', function() {
+                const lang = this.getAttribute('data-lang');
+                document.getElementById('title').innerText = translations[lang].title;
+                document.getElementById('subtitle').innerText = translations[lang].subtitle;
+                document.getElementById('content').innerText = translations[lang].content;
+                document.getElementById('languageMenu').classList.add('hidden');
+            });
+        });
+  </script>
+ </body>
+</html>

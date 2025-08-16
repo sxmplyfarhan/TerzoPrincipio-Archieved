@@ -1,0 +1,125 @@
+<html lang="it">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+    il terzo principio
+   </title>
+   <link href="noname-cutout.png" rel="icon"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Oswald', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-200 min-h-screen flex flex-col justify-center items-center overflow-y-auto md:overflow-hidden">
+  <section class="flex-grow flex items-center justify-center bg-gray-800 w-full">
+   <div class="container mx-auto px-4 py-8 flex justify-center">
+    <div class="bg-gray-900 text-white p-8 rounded-lg shadow-lg flex flex-col items-center mb-6 relative w-full max-w-5xl h-full">
+     <div class="absolute top-4 right-4">
+      <div class="relative">
+       <button class="cursor-pointer" id="translateButton">
+        <img alt="Translate icon" src="../pictures/tra21.png"/>
+       </button>
+       <div class="absolute right-0 mt-2 w-48 bg-gray-900 text-white rounded-md shadow-lg hidden" id="languageMenu">
+        <ul>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="it">
+          Italiano
+         </li>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="es">
+          Español
+         </li>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="fr">
+          Français
+         </li>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="en">
+          English
+         </li>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="vi">
+          Tiếng Việt
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <div class="w-full">
+      <h2 class="text-teal-500 text-2xl font-semibold mb-4 text-center" id="title">
+        La Dinámica: Estudio de las Fuerzas y el Movimiento
+      </h2>
+      <h3 class="text-3xl font-bold mb-6 text-center" id="subtitle">
+        La Ley de Acción y Reacción: Principios Fundamentales de la Interacción entre los Cuerpos.
+      </h3>
+      <p class="text-gray-400 mb-6 text-center text-lg" id="content">
+        La dinamica es la rama de la fisica que describe la evolucion en el tiempo de un sistema fisico en relacion con los motivos o causas que provocan los cambios de estado fisico o estado de movimiento .
+
+        Esta ley planea que toda accion genera una reaccion de igual intensidad , pero en sentido opuesto . Es decir , siempre que un objeto ejerza una fuerza sobre otro , este ultimo devolvera una fuerza de igual magnitud , pero en sentido opuesto al primero . Sin embargo , cabe notar que las dos fuerzas no actuan sobre el mismo obejeto .
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+       <img class="rounded-lg shadow-lg w-full" src="../pictures/spag1.png.jpeg"/>
+       <img class="rounded-lg shadow-lg w-full" src="../pictures/spag2.png.jpeg"/>
+       <img class="rounded-lg shadow-lg w-full" src="../pictures/spag3.jpeg"/>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <footer class="bg-gray-800 py-4 w-full">
+   <div class="container mx-auto flex justify-center px-4">
+        <a class="bg-teal-500 text-gray-900 px-6 py-3 mx-2 rounded-lg hover:bg-teal-600 flex items-center" href="esperimento-tre.html">
+    <img alt="Left arrow icon" class="mr-2" src="../pictures/arrow2.png"/>
+    Indietro
+    </a>
+    <a class="bg-teal-500 text-gray-900 px-6 py-3 mx-2 rounded-lg hover:bg-teal-600 flex items-center" href="informazioni.html">
+    Altre informazioni
+     <img alt="Right arrow icon" class="ml-2" src="../pictures/arrow1.png"/>
+    </a>
+   </div>
+  </footer>
+  <script>
+   document.getElementById('translateButton').addEventListener('click', function() {
+            document.getElementById('languageMenu').classList.toggle('hidden');
+        });
+
+        const translations = {
+            it: {
+                title: "La Dinamica: Studio delle Forze e del Movimento",
+                subtitle: "La Legge di Azione e Reazione: Principi Fondamentali dell'Interazione tra i Corpi.",
+                content: "La dinamica è la branca della fisica che descrive l'evoluzione nel tempo di un sistema fisico in relazione ai motivi o alle cause che provocano i cambiamenti di stato fisico o di movimento.Questa legge stabilisce che ogni azione genera una reazione di uguale intensità, ma in direzione opposta. In altre parole, ogni volta che un oggetto esercita una forza su un altro, quest'ultimo restituisce una forza di uguale magnitudine, ma diretta in senso opposto alla prima. Tuttavia, è importante notare che le due forze non agiscono sullo stesso oggetto."
+              
+            },
+            es: {
+                title: "La Dinámica: Estudio de las Fuerzas y el Movimiento",
+                subtitle: "La Ley de Acción y Reacción: Principios Fundamentales de la Interacción entre los Cuerpos.",
+                content: "La dinamica es la rama de la fisica que describe la evolucion en el tiempo de un sistema fisico en relacion con los motivos o causas que provocan los cambios de estado fisico o estado de movimiento. Esta ley planea que toda accion genera una reaccion de igual intensidad , pero en sentido opuesto . Es decir , siempre que un objeto ejerza una fuerza sobre otro , este ultimo devolvera una fuerza de igual magnitud , pero en sentido opuesto al primero . Sin embargo , cabe notar que las dos fuerzas no actuan sobre el mismo obejeto ."
+            },
+            fr: {
+                title: "La Dynamique : Étude des Forces et du Mouvement",
+                subtitle: "La Loi d'Action et de Réaction : Principes Fondamentaux de l'Interaction entre les Corps.",
+                content: "La dynamique est la branche de la physique qui décrit l'évolution dans le temps d'un système physique en relation avec les motifs ou les causes qui provoquent les changements d'état physique ou de mouvement. Cette loi stipule que toute action génère une réaction d'intensité égale, mais dans la direction opposée. Autrement dit, chaque fois qu'un objet exerce une force sur un autre, ce dernier renverra une force de même magnitude, mais dans la direction opposée à la première. Cependant, il convient de noter que les deux forces n'agissent pas sur le même objet."
+            },
+            en: {
+                title: "Dynamics: Study of Forces and Motion",
+                subtitle: "The Law of Action and Reaction: Fundamental Principles of Interaction between Bodies.",
+                content: "Dynamics is the branch of physics that describes the evolution over time of a physical system in relation to the causes or reasons that provoke changes in physical state or motion. This law states that every action generates an equal and opposite reaction. In other words, whenever one object exerts a force on another, the second object will exert a force of equal magnitude but in the opposite direction of the first. However, it is important to note that the two forces do not act on the same object."            },
+            vi: {
+                title: "Động lực học: Nghiên cứu Lực và Chuyển động",
+                subtitle: "Định lý về Hành động và Phản ứng: Các Nguyên lý Cơ bản của Sự Tương tác giữa Các Vật thể.",
+                content: "Động lực học là nhánh của vật lý nghiên cứu sự tiến triển theo thời gian của một hệ vật lý liên quan đến các nguyên nhân hoặc lý do gây ra sự thay đổi trạng thái vật lý hoặc chuyển động. Định lý này cho rằng mọi hành động đều tạo ra một phản ứng có cường độ bằng nhau nhưng theo hướng ngược lại. Nói cách khác, mỗi khi một vật thể tác dụng một lực lên vật thể khác, vật thể thứ hai sẽ trả lại một lực có độ lớn bằng nhau, nhưng theo hướng ngược lại với lực ban đầu. Tuy nhiên, cần lưu ý rằng hai lực này không tác động lên cùng một vật thể."            }
+        };
+
+        document.querySelectorAll('#languageMenu li').forEach(function(item) {
+            item.addEventListener('click', function() {
+                const lang = this.getAttribute('data-lang');
+                document.getElementById('title').innerText = translations[lang].title;
+                document.getElementById('subtitle').innerText = translations[lang].subtitle;
+                document.getElementById('content').innerText = translations[lang].content;
+                document.getElementById('languageMenu').classList.add('hidden');
+            });
+        });
+  </script>
+ </body>
+</html>

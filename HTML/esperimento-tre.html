@@ -1,0 +1,122 @@
+<html lang="it">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+    il terzo principio
+   </title>
+   <link href="noname-cutout.png" rel="icon"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Oswald', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-200 min-h-screen flex flex-col justify-center items-center overflow-y-auto md:overflow-hidden">
+  <section class="flex-grow flex items-center justify-center bg-gray-800 w-full">
+   <div class="container mx-auto px-4 py-8 flex justify-center">
+    <div class="bg-gray-900 text-white p-8 rounded-lg shadow-lg flex flex-col items-center mb-6 relative w-full max-w-5xl h-full">
+     <div class="absolute top-4 right-4">
+      <div class="relative">
+       <button class="cursor-pointer" id="translateButton">
+        <img alt="Translate icon" src="../pictures/tra21.png"/>
+       </button>
+       <div class="absolute right-0 mt-2 w-48 bg-gray-900 text-white rounded-md shadow-lg hidden" id="languageMenu">
+        <ul>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="it">
+          Italiano
+         </li>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="es">
+          Español
+         </li>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="fr">
+          Français
+         </li>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="en">
+          English
+         </li>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="vi">
+          Tiếng Việt
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <div class="w-full">
+      <h2 class="text-teal-500 text-2xl font-semibold mb-4 text-center" id="title">
+        Il Movimento e il Terzo Principio della Dinamica
+      </h2>
+      <h3 class="text-3xl font-bold mb-6 text-center" id="subtitle">
+        Come il Movimento si Basa sulle Forze Contrarie
+      </h3>
+      <p class="text-gray-400 mb-6 text-center text-lg" id="content">
+        Tutti i sistemi di locomozione, come camminare, si basano sul Terzo Principio della Dinamica: spingiamo indietro il terreno e il suolo ci spinge in avanti con una forza uguale e contraria, generando spinta. La ruota spinge il terreno indietro per avanzare, e i remi spingono l’acqua per muovere la barca. Anche nel movimento della bicicletta, le forze uguali e contrarie tra la ruota e l’asfalto permettono il movimento.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+       <img class="rounded-lg shadow-lg w-full" src="../pictures/piede.jpg"/>
+       <img class="rounded-lg shadow-lg w-full" src="../pictures/camminare2.jpeg"/>
+       <img class="rounded-lg shadow-lg w-full" src="../pictures/ruota1.jpg"/>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <footer class="bg-gray-800 py-4 w-full">
+   <div class="container mx-auto flex justify-center px-4">
+        <a class="bg-teal-500 text-gray-900 px-6 py-3 mx-2 rounded-lg hover:bg-teal-600 flex items-center" href="toeria-tre.html">
+    <img alt="Left arrow icon" class="mr-2" src="../pictures/arrow2.png"/>
+    Indietro
+    </a>
+    <a class="bg-teal-500 text-gray-900 px-6 py-3 mx-2 rounded-lg hover:bg-teal-600 flex items-center" href="spag.html">
+    Avanti
+     <img alt="Right arrow icon" class="ml-2" src="../pictures/arrow1.png"/>
+    </a>
+   </div>
+  </footer>
+  <script>
+   document.getElementById('translateButton').addEventListener('click', function() {
+            document.getElementById('languageMenu').classList.toggle('hidden');
+        });
+
+        const translations = {
+            it: {
+                title: "Il Movimento e il Terzo Principio della Dinamica",
+                subtitle: "Come il Movimento si Basa sulle Forze Contrarie",
+                content: "Tutti i sistemi di locomozione, come camminare, si basano sul Terzo Principio della Dinamica: spingiamo indietro il terreno e il suolo ci spinge in avanti con una forza uguale e contraria, generando spinta. La ruota spinge il terreno indietro per avanzare, e i remi spingono l’acqua per muovere la barca. Anche nel movimento della bicicletta, le forze uguali e contrarie tra la ruota e l’asfalto permettono il movimento."
+            },
+            es: {
+                title: "El Movimiento y el Tercer Principio de la Dinámica",
+                subtitle: "Cómo el Movimiento se Basa en Fuerzas Opuestas",
+                content: "Todos los sistemas de locomoción, como caminar, se basan en el Tercer Principio de la Dinámica: empujamos el suelo hacia atrás y el suelo nos empuja hacia adelante con una fuerza igual y opuesta, generando impulso. La rueda empuja el suelo hacia atrás para avanzar, y los remos empujan el agua para mover el bote. Incluso en el movimiento de la bicicleta, las fuerzas iguales y contrarias entre la rueda y el asfalto permiten el movimiento."
+            },
+            fr: {
+                title: "Le Mouvement et le Troisième Principe de la Dynamique",
+                subtitle: "Comment le Mouvement Est Basé sur des Forces Contraires",
+                content: "Tous les systèmes de locomotion, comme marcher, reposent sur le Troisième Principe de la Dynamique : nous poussons le sol en arrière et le sol nous pousse en avant avec une force égale et opposée, générant une impulsion. La roue pousse le sol en arrière pour avancer, et les rames poussent l'eau pour déplacer le bateau. Même dans le mouvement du vélo, les forces égales et opposées entre la roue et le bitume permettent le mouvement."
+            },
+            en: {
+                title: "Movement and the Third Principle of Dynamics",
+                subtitle: "How Movement is Based on Opposing Forces",
+                content: "All locomotion systems, like walking, are based on the Third Principle of Dynamics: we push the ground backward, and the ground pushes us forward with an equal and opposite force, generating thrust. The wheel pushes the ground back to move forward, and the oars push the water to move the boat. Even in bicycle movement, the equal and opposite forces between the wheel and the asphalt allow movement."            },
+            vi: {
+                title: "Chuyển động và Nguyên lý Thứ Ba của Động lực học",
+                subtitle: "Chuyển động Dựa trên Lực đối kháng",
+                content: "Tất cả các hệ thống di chuyển, như đi bộ, đều dựa trên Nguyên lý Thứ Ba của Động lực học: chúng ta đẩy mặt đất ra sau và mặt đất đẩy chúng ta về phía trước với một lực bằng và ngược lại, tạo ra lực đẩy. Bánh xe đẩy mặt đất ra sau để tiến lên, và mái chèo đẩy nước để di chuyển thuyền. Ngay cả trong chuyển động của xe đạp, các lực bằng và ngược lại giữa bánh xe và mặt đường cho phép chuyển động."            }
+        };
+
+        document.querySelectorAll('#languageMenu li').forEach(function(item) {
+            item.addEventListener('click', function() {
+                const lang = this.getAttribute('data-lang');
+                document.getElementById('title').innerText = translations[lang].title;
+                document.getElementById('subtitle').innerText = translations[lang].subtitle;
+                document.getElementById('content').innerText = translations[lang].content;
+                document.getElementById('languageMenu').classList.add('hidden');
+            });
+        });
+  </script>
+ </body>
+</html>

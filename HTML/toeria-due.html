@@ -1,0 +1,128 @@
+<html lang="it">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+    il terzo principio
+   </title>
+   <link href="noname-cutout.png" rel="icon"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Oswald', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-200 min-h-screen flex flex-col justify-center items-center overflow-y-auto md:overflow-hidden">
+  <section class="flex-grow flex items-center justify-center bg-gray-800 w-full">
+   <div class="container mx-auto px-4 py-8 flex justify-center">
+    <div class="bg-gray-900 text-white p-8 rounded-lg shadow-lg flex flex-col items-center mb-6 relative w-full max-w-5xl h-full">
+     <div class="absolute top-4 right-4">
+      <div class="relative">
+       <button class="cursor-pointer" id="translateButton">
+        <img alt="Translate icon" src="../pictures/tra21.png"/>
+       </button>
+       <div class="absolute right-0 mt-2 w-48 bg-gray-900 text-white rounded-md shadow-lg hidden" id="languageMenu">
+        <ul>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="it">
+          Italiano
+         </li>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="es">
+          Español
+         </li>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="fr">
+          Français
+         </li>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="en">
+          English
+         </li>
+         <li class="px-4 py-2 hover:bg-teal-500 hover:text-black cursor-pointer" data-lang="vi">
+          Tiếng Việt
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <div class="w-full">
+      <h2 class="text-teal-500 text-2xl font-semibold mb-4 text-center" id="title">
+        La Forza e le Interazioni Reciproche
+      </h2>
+      <h3 class="text-3xl font-bold mb-6 text-center" id="subtitle">
+        Principio di Azione e Reazione e la Natura delle Forze
+      </h3>
+      <p class="text-gray-400 mb-6 text-center text-lg" id="content">
+        La forza è una grandezza vettoriale che origina dall’interazione di due o più corpi ed è sempre associata a una variazione di velocità.<br>
+
+        Inoltre, dalla terza legge della dinamica deriva il principio secondo il quale se un corpo si trovasse da solo nello spazio non sarebbe sottoposto ad alcuna forza.<br>
+        
+        Le forze sono delle interazioni reciproche tra corpi o sistemi fisici: se un corpo esercita una forza su un altro corpo, è vero anche il contrario. Le due forze sono ugualmente intense ma opposte e prendono il nome di azione e reazione.<br>
+      
+    </p>
+    <div class="flex justify-center mt-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+           <img class="rounded-lg shadow-lg w-full max-w-xs" src="../pictures/forza12.png" alt="Description of image 1"/>
+            <img class="rounded-lg shadow-lg w-full max-w-xs" src="../pictures/space12.jpg"/>
+         </div>
+   </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <footer class="bg-gray-800 py-4 w-full">
+   <div class="container mx-auto flex justify-center px-4">
+        <a class="bg-teal-500 text-gray-900 px-6 py-3 mx-2 rounded-lg hover:bg-teal-600 flex items-center" href="esperimento-uno.html">
+    <img alt="Left arrow icon" class="mr-2" src="../pictures/arrow2.png"/>
+    Indietro
+    </a>
+    <a class="bg-teal-500 text-gray-900 px-6 py-3 mx-2 rounded-lg hover:bg-teal-600 flex items-center" href="esperimento-due.html">
+    Avanti
+     <img alt="Right arrow icon" class="ml-2" src="../pictures/arrow1.png"/>
+    </a>
+   </div>
+  </footer>
+  <script>
+   document.getElementById('translateButton').addEventListener('click', function() {
+            document.getElementById('languageMenu').classList.toggle('hidden');
+        });
+
+        const translations = {
+            it: {
+                title: "La Forza e le Interazioni Reciproche",
+                subtitle: "Principio di Azione e Reazione e la Natura delle Forze",
+                content: "La forza è una grandezza vettoriale che origina dall’interazione di due o più corpi ed è sempre associata a una variazione di velocità.\n Inoltre, dalla terza legge della dinamica deriva il principio secondo il quale se un corpo si trovasse da solo nello spazio non sarebbe sottoposto ad alcuna forza.<\nLe forze sono delle interazioni reciproche tra corpi o sistemi fisici: se un corpo esercita una forza su un altro corpo, è vero anche il contrario. Le due forze sono ugualmente intense ma opposte e prendono il nome di azione e reazione."
+            },
+            es: {
+                title: "La Fuerza y las Interacciones Recíprocas",
+                subtitle: "Principio de Acción y Reacción y la Naturaleza de las Fuerzas",
+                content: "La fuerza es una magnitud vectorial que se origina de la interacción de dos o más cuerpos y siempre está asociada a una variación de velocidad. \n Además, de la tercera ley de la dinámica se deriva el principio según el cual si un cuerpo estuviera solo en el espacio no estaría sometido a ninguna fuerza. \n Las fuerzas son interacciones recíprocas entre cuerpos o sistemas físicos: si un cuerpo ejerce una fuerza sobre otro cuerpo, también es cierto lo contrario. Las dos fuerzas son igualmente intensas pero opuestas y se denominan acción y reacción."
+            },
+            fr: {
+                title: "La Force et les Interactions Réciproques",
+                subtitle: "Principe d'Action et de Réaction et la Nature des Forces",
+                content: "La force est une grandeur vectorielle qui provient de l'interaction de deux corps ou plus et est toujours associée à une variation de vitesse. \n De plus, de la troisième loi de la dynamique découle le principe selon lequel si un corps était seul dans l'espace, il ne serait soumis à aucune force. \n Les forces sont des interactions réciproques entre des corps ou des systèmes physiques : si un corps exerce une force sur un autre, il est également vrai que l'inverse se produit. Les deux forces sont également intenses mais opposées et sont appelées action et réaction. "
+            },
+            en: {
+                title: "Force and Reciprocal Interactions",
+                subtitle: "Principle of Action and Reaction and the Nature of Forces",
+                content: "Force is a vector quantity that originates from the interaction of two or more bodies and is always associated with a change in velocity. \nFurthermore, from the third law of dynamics comes the principle that if a body were alone in space, it would not be subject to any force. \nForces are reciprocal interactions between bodies or physical systems: if one body exerts a force on another, the opposite is also true. The two forces are equally intense but opposite and are known as action and reaction."            },
+            vi: {
+                title: "Lực và Các Tương Tác Hỗn Đổi",
+                subtitle: "Nguyên lý Hành động và Phản ứng và Bản Chất của Lực",
+                content: "Lực là một đại lượng vector phát sinh từ sự tương tác của hai hoặc nhiều vật thể và luôn liên quan đến sự thay đổi vận tốc. \n Hơn nữa, từ định lý thứ ba của động lực học, có nguyên lý rằng nếu một vật thể ở một mình trong không gian, nó sẽ không chịu tác động của bất kỳ lực nào. \n Lực là những tương tác hỗn đổi giữa các vật thể hoặc hệ thống vật lý: nếu một vật thể tác dụng lực lên vật thể khác, điều ngược lại cũng đúng. Hai lực này có cường độ bằng nhau nhưng ngược chiều và được gọi là hành động và phản ứng."            }
+        };
+
+        document.querySelectorAll('#languageMenu li').forEach(function(item) {
+            item.addEventListener('click', function() {
+                const lang = this.getAttribute('data-lang');
+                document.getElementById('title').innerText = translations[lang].title;
+                document.getElementById('subtitle').innerText = translations[lang].subtitle;
+                document.getElementById('content').innerText = translations[lang].content;
+                document.getElementById('languageMenu').classList.add('hidden');
+            });
+        });
+  </script>
+ </body>
+</html>
