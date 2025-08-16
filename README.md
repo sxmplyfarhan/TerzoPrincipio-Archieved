@@ -54,7 +54,7 @@ Well this is where we ran in to an issue. We didnt have a server so we hosted th
 
 ---
 
-When I remade it, the result will be a cleaner, component-based version with better structure, animations, and maintainable code. Feel free to explore both to see how much I’ve grown.
+When I remake it, the result will be a cleaner, component-based version with better structure, animations, and maintainable code. Feel free to explore both to see how much I’ve grown.
 
 ---
 
