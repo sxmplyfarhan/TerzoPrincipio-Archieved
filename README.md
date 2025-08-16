@@ -18,9 +18,14 @@ A website about Newtons third law, which means FAB = – FAB.
 
 ## Screenshots 
 
+### Start of the site:
 ![Screenshot](screenshots/Screenshot1.png)
-![Screenshot](screenshots/Screenshot2.png)
-![Screenshot](screenshots/Screenshot3.png)
+
+### Middle section / key content:
+![Screenshot](screenshots/Screenshot5.png)
+
+### End / Conclusion:
+![Screenshot](screenshots/Screenshot9.png)
 
 
 ---
