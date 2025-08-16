@@ -35,7 +35,7 @@ A website about Newtons third law, which means FAB = – FAB.
 ## How was the website made?
 
 Originally the website was for a school project. We didnt want to use google slides so we made a website.
-Me and my friend Azan made the structure and the code. The other 3 made the text and gave us support.
+Me and my friend Azan made the structure and the code. The other 4 made the text and gave us support.
 We used HTML and TAIlWIND. 
 
 ---
